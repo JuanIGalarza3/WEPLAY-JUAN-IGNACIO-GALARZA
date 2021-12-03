@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+/*HEADER*/
+#header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120px;
+
+}
+.fixContent{
+	margin: auto;
+	max-width: 1200px
+}
+#header .navBar{
+	display: flex;
+	flex-direction: row;
+	background-color: #05a005c4;
+	border-radius: 0 0 50px 50px;
+	height: 100%;
+}
+.logo{
+	font-size: 70px;
+	font-family: 'Bebas Neue', cursive;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	border: 5px solid  #05a005c4;
+	align-items: center;
+	text-decoration: none;
+	color: #05a005c4;
+	padding: 5px;
+	border-radius: 0 0 50px 50px;
+}
+
+.we{
+	color:black;
+	padding: 2px
+}
+
+.menuCont{
+	width: 100%;
+}
+.menuList{
+	height: 100%;
+	list-style: none;
+	align-items: center;
+	justify-content: space-evenly;	
+	display: flex;
+	flex-direction: row;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 2rem;
+	color: white;
+}
+.menuList li a{
+	text-decoration: none;
+	color: white
+}
+.select{
+	background-color: white;
+
+}
+li a.select{
+	color:#05a005c4;
+	padding: 10px 30px;
+	border-radius:40px;
+}
+/*====================================*/
+/*BODY*/
+#body{
+	display:grid;
+	width: 100%;
+	font-family: 'Bebas Neue', cursive;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: ". . ."
+						". titleA ."
+						 ". titleB ."
+						 "img img img"
+						 ". . .";
+	grid-template-rows: 150px 60px 30px	auto					 	
+}
+.titleA{
+	grid-area: titleA;
+	font-size:3rem;
+	text-align: center;	
+}
+.titleA p{
+	background-color: #05a005c4;
+	border-radius: 30px;
+	color:white;
+}
+.titleB{
+	grid-area: titleB;
+	font-size: 25px;
+	margin: 20px;
+}
+#body .titleB{
+	text-align-last: justify;
+}
+.bodyImg{
+	grid-area:img;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width:100%;
+	margin-top:50px;
+	justify-content:center;
+}
+.bodyImg div{
+	border: 5px solid #ccc;
+	padding: 10px;
+	margin:5px;
+}/*================================*/
+/*FOOTER*/
+#footer{
+	font-size: 20px;
+	border:3px solid #05a005c4;
+	margin: 10px;
+	padding:5px;
+	font-family: 'Bebas Neue', italic;	
+	text-align-last: justify;
+}
+#footer span{
+	padding-left: 20px;
+}/*=================================*/
+/*PRODUCTOS*/
+#bodyProd{
+	display:grid;
+	width: 100%;
+	font-family: 'Bebas Neue', cursive;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: ". . ."
+						". titleB ."
+						 "img img img"
+						 ". titleA ."
+						 ". . .";
+	grid-template-rows: 150px  30px	auto auto					 	
+}
+#bodyProd .titleB{
+	font-size: 30px;
+	text-align: center;
+}
+#bodyProd .bodyImg div{
+	border-radius: 20px;
+	border-color: #05a005c4;
+}
+#bodyProd input{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	padding: 5px;
+	font-family:'Bebas Neue', cursive; 
+	font-size: 24px;
+	background-color:#05a005c4;
+	color:white;
+	border-radius: 20px
+}
+#bodyProd .titleA{
+	font-size: 2rem;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}/*=====================================*/
+/*NOVEDADES*/
+#bodyNews{
+	display:grid;
+	width: 100%;
+	font-family: 'Bebas Neue', cursive;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: ". . ."
+						". titleB ."
+						 "imgA imgA imgA"
+						 "imgB imgB imgB"
+						 "form form form";
+	grid-template-rows: 150px  30px	auto auto auto
+}
+#bodyNews .titleB{
+	font-size: 30px;
+	text-align: center;
+	margin: 20px
+}
+.bodyImgA{
+	grid-area: imgA;
+	display: flex;
+	flex-flow: inherit;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+	margin: 70px;
+	background-color: #05a005c4;
+	color:white;
+	padding-bottom: 10px;
+}
+.bodyImgA span{
+	font-size: 29px;
+	text-decoration:underline;    
+	align-self: baseline;
+    padding: 20px;
+    line-height: 6rem;
+}
+.bodyImgA img{
+	padding: 5px;
+    height: 90%;
+    border: 2px solid black;
+}
+.bodyImgA p{
+	font-size: 26px;
+	text-align: center;
+    line-height: 70px;
+    align-self: center;
+    padding: 30px;
+    margin: 10px;
+}
+
+
+.bodyImgB{
+	grid-area: imgB;
+	display: flex;
+	flex-flow: inherit;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+	margin: 70px;
+	background-color: #05a005c4;
+	color:white;
+}
+.bodyImgB span{
+	font-size: 29px;
+	text-decoration:underline;    
+	align-self: baseline;
+    padding: 20px;
+    line-height: 6rem;
+}
+.bodyImgB img{
+   padding: 5px;
+    border: 2px solid black;
+    height: 90%;
+    display: block;
+    margin-right: 10%;
+}
+.bodyImgB ol{
+	font-size: 26px;
+	text-align: center;
+    line-height: 70px;
+    align-self: center;
+    padding: 30px;
+    margin: 10px;
+}/*==============================*/
+/*FORMULARIO*/
+.form{
+	grid-area: form;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	align-items: center;
+	border: 5px solid #05a005c4;
+	margin: auto;
+}
+.form p{
+	font-size:28px;
+	padding-bottom:10px;
+	text-align: center;
+}
+.form label{
+	font-size: 24px;
+	padding: 8px;
+	text-decoration: underline;
+}
+input[type=email]{
+	padding: 10px;
+	border-radius: 10px;
+}
+input[type=text]{
+	padding: 10px;
+	border-radius: 10px;
+}
+input[type=password]{
+	padding: 10px;
+	border-radius: 10px;
+}
+input[type=submit]{
+	font-family:'Bebas Neue', cursive;
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 22px
+}
+input[type=reset]{
+	font-family:'Bebas Neue', cursive;
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 22px
+}/*===================================*/
+/*NOSOTROS*/
+#bodyUs{
+	display:grid;
+	width: 100%;
+	font-family: 'Bebas Neue', cursive;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: ". . ."
+						". titleB ."
+						 "imgB imgB imgB"
+						 "redes redes redes";
+	grid-template-rows: 150px  auto	400px 100px;
+}
+#bodyUs .bodyImgB{
+	margin-top: 20px
+}
+#bodyUs .bodyImgB p{
+	font-size: 26px;
+	text-align: center;
+}
+.bodyImgB iframe{
+	width: 66.666%;
+	height:100%;
+}
+.redes{
+	grid-area: redes;
+	display: flex;
+	flex-direction: row;
+	align-items:flex-end;
+	justify-content: space-around;
+}
+.redes img{
+	height:30px;
+	filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    /*esto es para sacarles el fondo a los png*/
+    margin-bottom: -10px
+ }
+ .redes span{
+ 	font-size: 20px
+ }
+/*=========================================*/
+/*CONTACTO*/
+#bodyCont{
+	display:grid;
+	width: 100%;
+	font-family: 'Bebas Neue', cursive;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: ". . ."
+						". titleB ."
+						 ". titleA ."
+						 "form form form";
+	grid-template-rows: 150px  auto	auto auto
+}
+#bodyCont .titleB{
+	font-size: 36px;
+	text-align: center;
+	text-transform: 
+}
+
+#bodyCont .form{
+	width: 100%;
+}
+#bodyCont .form input{
+	padding: 10px
+	margin:20px;
+}
+#bodyCont .form span{
+	font-size: 24px;
+}
+#bodyCont .form div{
+	margin-bottom: 20px;
+	margin-right: 20px;
+	padding:10px;
+}
+input[type=radio]{
+	padding: 10px
+	
+}
