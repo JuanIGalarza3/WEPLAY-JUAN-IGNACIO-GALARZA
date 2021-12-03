@@ -37,12 +37,21 @@
 	padding: 5px;
 	border-radius: 0 0 50px 50px;
 }
-
-.we{
-	color:black;
-	padding: 2px
+.logo:hover{
+	box-shadow: 10px 0  5px  0 #1C4D0D;
 }
 
+@keyframes slide{
+ 	0% { transform: translateZ(0) translateX(0);}
+  	50% { transform: translateZ(160px) translateX(100px);}
+}
+.we{
+	animation: slide 0.60s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}/*animacion logo*/
+.we{
+	color:black;
+	padding: 2px;
+}
 .menuCont{
 	width: 100%;
 }
