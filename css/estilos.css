@@ -305,7 +305,7 @@ li a.select{
 	padding: 8px;
 	text-decoration: underline;
 }
-input[type=email]{
+input[type=email]:{
 	padding: 10px;
 	border-radius: 10px;
 }
@@ -351,6 +351,9 @@ input[type=reset]{
 .bodyImgB iframe{
 	width: 66.666%;
 	height:100%;
+}
+iframe:hover{
+	transform: scale(1.5);
 }
 .redes{
 	grid-area: redes;
@@ -404,6 +407,20 @@ input[type=reset]{
 	padding:10px;
 }
 input[type=radio]{
-	padding: 10px
-	
+	padding: 10px	
+}
+@media all and (max-width:800px){
+	#header{
+		height: 80px;
+	}
+	.fixContent .navBar{
+		flex-direction: column;
+	}
+	.logo{
+		font-size: 40px
+	}
+	.menuList{
+		font-size: 28px
+	}
+
 }
