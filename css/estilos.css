@@ -219,7 +219,7 @@ li a.select{
 .bodyImgA{
 	grid-area: imgA;
 	display: flex;
-	flex-flow: inherit;
+	flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: nowrap;
     align-content: stretch;
@@ -252,7 +252,7 @@ li a.select{
 .bodyImgB{
 	grid-area: imgB;
 	display: flex;
-	flex-flow: inherit;
+	flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: nowrap;
     align-content: stretch;
@@ -271,7 +271,6 @@ li a.select{
     border: 2px solid black;
     height: 90%;
     display: block;
-    margin-right: 10%;
     width: 40%
 }
 .bodyImgB ol{
@@ -335,8 +334,9 @@ input[type=reset]{
 	grid-template-areas: "header header header"
 						". titleB ."
 						 "imgB imgB imgB"
-						 "redes redes redes";
-	grid-template-rows: auto auto 450px auto
+						 "redes redes redes"
+						 ". . .";
+	grid-template-rows: auto auto 450px 200px
 }
 #bodyUs .bodyImgB{
 	margin-top: 20px
