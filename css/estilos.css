@@ -76,6 +76,13 @@ body{
 .lead{
 	font-size: 2em
 }
+/*NOVEDADES*/
+.img-fluid{
+	height: 100%
+}
+.card{
+	background-color:#138913;
+}
 
 /*#header{
 	top: 0;
