@@ -5,6 +5,7 @@ body{
 	background-image: url(../img/patron.jpg);
   	background-repeat: repeat;
 }
+/*HEADER*/
 .navbar-brand{
 	font-size: 6rem;
 	color: #05a005c4 !important; 
@@ -12,6 +13,8 @@ body{
 }
 
 .we{
+	font-size: 6rem;
+	font-family: 'Bebas Neue', cursive;
 	color:black;
 }
 
@@ -51,7 +54,7 @@ body{
 		padding-top: 1rem;
 	}
 }
-/*HEADER*/
+
 /*CARRUSEL*/
 .carousel-control-next, .carousel-control-prev{
 	width: 10%;
@@ -61,6 +64,18 @@ body{
 	border-bottom: 10px solid white
 }
 
+.mark {
+	background-color: #8cf177de;
+    border-radius: 20px;
+}
+.play{
+	font-size: 6rem;
+	color: #05a005c4 !important; 
+	font-family: 'Bebas Neue', cursive;
+}
+.lead{
+	font-size: 2em
+}
 
 /*#header{
 	top: 0;
