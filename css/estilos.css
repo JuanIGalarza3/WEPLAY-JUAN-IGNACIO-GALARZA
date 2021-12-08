@@ -84,6 +84,13 @@ body{
 	background-color:#138913;
 }
 
+/*NOSOTROS*/
+.cont{
+	background-color: green;
+}
+iframe:hover{
+	transform: scale(1.5);
+}
 /*#header{
 	top: 0;
 	left: 0;
