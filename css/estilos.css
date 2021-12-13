@@ -125,3 +125,29 @@ iframe:hover{
 	filter: brightness(1.1);
     mix-blend-mode: multiply;
 }
+form:focus-within{
+	background-color: #05a005c4;
+	padding: 0 2rem;
+
+}
+.form-check:focus-within{
+	background-color: #05a005c4;
+
+}
+.form-control:focus{
+	background-color: #05a005c4;
+	color:white;
+	font-size: 1.5rem;
+}
+@media all and (max-width: 500px){
+	#footer{
+		flex-direction: column;
+		flex-wrap: nowrap;
+		text-align:left;
+	}
+	.cont{
+		flex-wrap: nowrap;
+		margin: 0;
+		padding:0;
+	}
+}
