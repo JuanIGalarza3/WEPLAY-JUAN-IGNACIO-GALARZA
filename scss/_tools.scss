@@ -1,0 +1,13 @@
+@mixin colorPrincipal{
+	background-color: $mainColor;
+}
+@mixin mainBorde{
+	border: 3px solid $mainColor;
+	border-radius: 0 0 50px 50px;
+}
+@mixin footer{
+	border: 1px solid black;
+	background-color:#212529;
+	margin: 5px;
+	padding: 3px;
+}

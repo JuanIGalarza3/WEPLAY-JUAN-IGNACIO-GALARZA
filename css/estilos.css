@@ -1,98 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-
-body{
-	background-image: url(../img/patron.jpg);
-  	background-repeat: repeat;
-}
-/*HEADER*/
-.navbar-brand{
-	font-size: 6rem;
-	color: #05a005c4 !important; 
-	font-family: 'Bebas Neue', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300&display=swap");
+body {
+  background-image: url(../img/patron.jpg);
+  background-repeat: repeat;
 }
 
-span.we{
-	font-size: 6rem;
-	font-family: 'Bebas Neue', cursive;
-	color:black;
-	 animation: we 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.navbar-brand {
+  font-size: 6rem;
+  color: #05a005c4 !important;
+  font-family: "Bebas Neue", cursive;
 }
-@-webkit-keyframes we{
+
+.we, #nosotros span {
+  font-size: 6rem;
+  font-family: "Bebas Neue", cursive;
+  color: black;
+}
+
+.nav-item {
+  font-size: 2rem;
+  font-family: "Bebas Neue", cursive;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.borde {
+  border: 3px solid #05a005c4;
+  border-radius: 0 0 50px 50px;
+  background-image: url(../img/bg-img.png);
+  background-position: center;
+}
+
+.rounded {
+  border: 3px solid #05a005c4;
+  border-radius: 0 0 50px 50px;
+  border-radius: 50px !important;
+}
+
+.navbar-toggler {
+  border-radius: .5rem;
+  background-color: #05a005c4;
+}
+
+.navbar-collapse {
+  background-color: green;
+}
+
+@media all and (max-width: 992px) {
+  .navbar-collapse {
+    background-color: white;
+    display: flex;
+    border: none;
+    text-align: center;
+    padding-top: 1rem;
+  }
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 10%;
+  background-color: #05a005c4;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-bottom: 10px solid white;
+}
+
+.mark {
+  background-color: #8cf177de;
+  border-radius: 20px;
+}
+
+.play {
+  font-size: 6rem;
+  color: #05a005c4 !important;
+  font-family: "Bebas Neue", cursive;
+}
+
+.lead {
+  font-size: 2em;
+  font-weight: 300;
+  font-family: "Roboto";
+}
+
+.img-fluid {
+  height: 100%;
+}
+
+.card {
+  background-color: #138913;
+}
+
+#nosotros {
+  background-color: #05a005c4;
+}
+
+iframe:hover {
+  transform: scale(1.5);
+}
+
+.redes {
+  width: 100px;
+  height: 50px;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
+
+form:focus-within {
+  padding: 0 2rem;
+}
+
+.form-check:focus-within {
+  background-color: #05a005c4;
+}
+
+.form-control:focus {
+  color: white;
+  font-size: 1.5rem;
+  background-color: #05a005c4;
+}
+
+#footer {
+  border: 1px solid black;
+  background-color: #212529;
+  margin: 5px;
+  padding: 3px;
+}
+
+@media all and (max-width: 500px) {
+  #footer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .cont {
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+span.we, #nosotros span {
+  animation: we 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes we {
   0% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
     opacity: 1;
   }
   50% {
     -webkit-transform: translateX(200px);
-            transform: translateX(200px);
+    transform: translateX(200px);
     opacity: 1;
   }
-
-}
-.nav-item{
-	font-size: 2rem;
-	font-family: 'Bebas Neue', cursive;
-	margin-right: 1.5rem;
-	margin-left:1.5rem;
-}
-.nav-link{
-	padding: 0
-}
-.borde{
-	border:5px solid #05a005c4;
-	border-radius:0 0 50px 50px;	
-	background-image: url(../img/bg-img.png);
-	background-position: center;
-}
-.rounded{
-	border-radius: 50px !important;
-	border:3px solid #05a005c4;
 }
 
-.navbar-toggler{
-	border-radius: .5rem;
-	background-color: #05a005c4;
-}
-.navbar-collapse{
-	background-color: green
-}
-@media all and (max-width: 992px){
-	.navbar-collapse{
-		background-color: white;
-		display: flex;
-		border: none;
-		text-align: center;
-		padding-top: 1rem;
-	}
-}
-
-/*CARRUSEL*/
-.carousel-control-next, .carousel-control-prev{
-	width: 10%;
-	background-color: #ddd5e154;
-}
-.carousel-indicators [data-bs-target]{
-	border-bottom: 10px solid white
-}
-
-.mark {
-	background-color: #8cf177de;
-    border-radius: 20px;
-}
-.play{
-	font-size: 6rem;
-	color: #05a005c4 !important; 
-	font-family: 'Bebas Neue', cursive;
-}
-.lead{
-	font-size: 2em
-}
 .blink-1 {
-	-webkit-animation: blink-1 0.6s both;
-	        animation: blink-1 0.6s both;
+  -webkit-animation: blink-1 0.6s both;
+  animation: blink-1 0.6s both;
 }
+
 @-webkit-keyframes blink-1 {
   0%,
   50%,
@@ -103,51 +177,4 @@ span.we{
   75% {
     opacity: 0;
   }
-}
-/*NOVEDADES*/
-.img-fluid{
-	height: 100%
-}
-.card{
-	background-color:#138913;
-}
-
-/*NOSOTROS*/
-.cont{
-	background-color: green;
-}
-iframe:hover{
-	transform: scale(1.5);
-}
-.redes{
-	width: 100px;
-	height: 50px;
-	filter: brightness(1.1);
-    mix-blend-mode: multiply;
-}
-form:focus-within{
-	background-color: #05a005c4;
-	padding: 0 2rem;
-
-}
-.form-check:focus-within{
-	background-color: #05a005c4;
-
-}
-.form-control:focus{
-	background-color: #05a005c4;
-	color:white;
-	font-size: 1.5rem;
-}
-@media all and (max-width: 500px){
-	#footer{
-		flex-direction: column;
-		flex-wrap: nowrap;
-		text-align:left;
-	}
-	.cont{
-		flex-wrap: nowrap;
-		margin: 0;
-		padding:0;
-	}
 }

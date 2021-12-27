@@ -1,0 +1,134 @@
+
+body{
+  background-image: url(../img/patron.jpg);
+  background-repeat: repeat; }
+
+.navbar-brand{
+  font-size: 6rem;
+  color: $mainColor !important;
+  font-family: $mainFont
+}
+
+.we{
+  font-size: 6rem;
+  font-family: $mainFont;
+  color: black;
+}
+
+.nav-item{
+  font-size: 2rem;
+  font-family: $mainFont;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem; }
+
+.nav-link {
+  padding: 0; }
+
+.borde {
+  @include mainBorde;
+  background-image: url(../img/bg-img.png);
+  background-position: center; }
+
+.rounded {
+  @include mainBorde;
+  border-radius: 50px !important;}
+
+.navbar-toggler {
+  border-radius: .5rem;
+  @include colorPrincipal; }
+
+.navbar-collapse {
+  background-color: green; 
+      @media all and (max-width: 992px) {
+      background-color: white;
+      display: flex;
+      border: none;
+      text-align: center;
+      padding-top: 1rem;  }
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 10%;
+  @include colorPrincipal;}
+
+.carousel-indicators [data-bs-target] {
+  border-bottom: 10px solid white; }
+
+.mark {
+  background-color: #8cf177de;
+  border-radius: 20px; 
+}
+
+.play {
+  font-size: 6rem;
+  color: #05a005c4 !important;
+  font-family: $mainFont; 
+}
+
+.lead {
+  font-size: 2em; 
+  font-weight: map-get($fontMap,light);
+  font-family: $altFont
+}
+
+.img-fluid {
+  height: 100%; 
+}
+
+.card {
+  background-color: #138913; }
+
+#nosotros{ 
+ span{
+    @extend .we;
+  }
+  @include colorPrincipal;
+
+}
+
+
+iframe{
+  &:hover {
+  transform: scale(1.5); }
+}
+
+.redes {
+  width: 100px;
+  height: 50px;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply; }
+
+form{
+  &:focus-within {
+  padding: 0 2rem; }
+}
+
+.form-check{
+  &:focus-within {
+  background-color: $mainColor;}
+}
+
+.form-control{ 
+  &:focus {
+  color: white;
+  font-size: 1.5rem;  
+  @include colorPrincipal;
+  }
+}
+
+
+#footer{
+  @include footer;
+  @media all and (max-width: 500px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      text-align: left;}
+}
+  
+.cont {
+  @media all and (max-width: 500px) {
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0; } 
+}
+
